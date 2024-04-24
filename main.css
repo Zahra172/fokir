@@ -1,0 +1,409 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+}
+.bg-image {
+  background-image: url(images/hero\ img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+}
+.nav {
+  color: white;
+  padding: 30px;
+  font-size: 24;
+}
+.nav-items {
+  float: left;
+  z-index: 5;
+}
+p.nav-items {
+  position: absolute;
+  left: 180px;
+  margin: 0;
+
+  font-weight: bold;
+  color: #ff305b;
+}
+.items {
+  position: absolute;
+  right: 180px;
+}
+.items span {
+  margin-right: 20px;
+}
+.items span:hover {
+  color: #ff305b;
+}
+.clear-fix {
+  clear: both;
+}
+.caption {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  position: absolute;
+  right: 0%;
+  left: 0;
+  right: 0;
+  top: 0%;
+  bottom: 0;
+  /* left:750px;
+    top:30% */
+}
+.caption h3 {
+  margin-top: 300px;
+  font-size: 24px;
+  color: white;
+}
+.caption p {
+  font-size: 70px;
+  color: #ff305b;
+  font-weight: 600;
+  margin: 10px;
+}
+.caption h4 {
+  color: white;
+  margin: 15px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.section-left {
+  width: 35%;
+
+  margin: 30px;
+}
+.border {
+  border: 10px solid #333;
+  border-radius: 10px;
+}
+.image {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  overflow: hidden;
+}
+.image img {
+  width: 100%;
+}
+.layer {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 1s top;
+}
+.border:hover .layer {
+  top: 0px;
+}
+.layer svg {
+  position: relative;
+  top: 50%;
+  margin-left: 10px;
+  left: 40%;
+}
+
+.about {
+  width: 50%;
+
+  padding-left: 40px;
+  margin-left: 30px;
+}
+.about p {
+  font-size: 20px;
+}
+.float-about {
+  float: left;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+h2 {
+  position: relative;
+  font-size: 34px;
+}
+h2::before {
+  content: "";
+  width: 5px;
+  height: 30px;
+  background-color: #ff305b;
+  position: absolute;
+  right: 100%;
+  margin: 5px;
+  z-index: 6;
+}
+.dashed {
+  width: 100%;
+  border-top: 1px dashed rgb(85, 85, 85);
+}
+.information {
+  float: left;
+}
+.information span {
+  font-weight: bold;
+}
+.margin-info {
+  margin-left: 60px;
+}
+button {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  background-color: #ff305b;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+}
+.margin-button {
+  margin-left: 20px;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+.h1-line {
+  text-align: center;
+  margin-top: 50px;
+}
+.line {
+  text-align: center;
+  left: 40%;
+  width: 20%;
+  border-top: 1px #ff305b;
+  position: relative;
+  height: 1px;
+  background-color: #ff305b;
+}
+.line::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #ff305b;
+  position: absolute;
+  z-index: 8;
+  top: 8px;
+  right: 80px;
+  margin-bottom: 30px;
+}
+.line::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: rgb(255, 48, 91);
+  position: absolute;
+  z-index: 8;
+  bottom: 8px;
+  right: 80px;
+  margin-top: 30px;
+}
+.services {
+  text-align: center;
+  width: 20%;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+  float: left;
+  transition: background-color 1s;
+}
+.services:hover {
+  background-color: white;
+}
+
+.portfolio-head {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.portfolio-head span {
+  padding-left: 30px;
+}
+.portfolio-head span:hover{
+  color: #ff305b;
+}
+
+.portfolio-product {
+  width: 30%;
+  position: relative;
+  float: left;
+  padding: 15px;
+  border: none;
+}
+.hover-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: background-color .2s ease-in , visibility .3s ease-in;
+}
+.hover-color svg {
+  position: relative;
+  top: 90%;
+  left: 90%;
+  visibility: hidden;
+}
+.portfolio-product:hover .hover-color {
+  background-color: rgba(85, 85, 85, 0.5);
+}
+.portfolio-product:hover svg{
+  visibility: visible;
+}
+
+.portfolio-product img {
+  width: 100%;
+  display: block;
+}
+.bg-color {
+  width: 100%;
+  background-color: gainsboro;
+  margin-top: 50px;
+}
+.counter .svg {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.counter {
+  float: left;
+  text-align: center;
+  width: 25%;
+
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.counter span {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.feedback {
+  width: 80%;
+  background-color: gainsboro;
+  border-radius: 5px;
+  margin: auto;
+}
+.rectangle {
+  width: 0px;
+  height: 0px;
+
+  border-radius: 5px;
+  border-right: rgba(0, 0, 0, 0) solid 120px;
+  border-left: rgb(255, 48, 91) solid 120px;
+  border-top: rgb(255, 48, 91) solid 120px;
+  border-bottom: rgba(0, 0, 0, 0) solid 120px;
+  position: relative;
+}
+.rectangle::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  background-color: black;
+  background-image: url(images/feedback.jpg);
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+  bottom: -50px;
+  right: -50px;
+}
+.captionfeedback {
+  float: left;
+}
+.captions {
+  width: 70%;
+  padding: 20px;
+  bottom: 5px;
+}
+.blog1 {
+  background-color: #ffffff;
+  width: 30%;
+  float: left;
+  margin: 20px;
+}
+.blog1 img {
+  width: 100%;
+}
+.blog1 iframe {
+  width: 100%;
+}
+.p-svg {
+  float: left;
+  vertical-align: text-top;
+  margin: auto;
+}
+.blog-content {
+  padding: 15px;
+}
+.contact-us {
+  background-color: white;
+  position: relative;
+  right: 0;
+  left: 0;
+}
+.contact {
+  text-align: center;
+}
+.contact input {
+  margin: 20px;
+  height: 30px;
+  padding: 5px;
+  border-color: gainsboro;
+  border-radius: 5px;
+  width: 23.5%;
+}
+.contact .special {
+  width: 50%;
+}
+.texterea {
+  resize: both;
+  overflow: auto;
+  width: 50%;
+  height: 100px;
+  padding: 10px;
+  margin: 8px;
+}
+
+.contact-us button {
+  position: relative;
+  left: 23%;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  margin: 20px;
+  color: white;
+  background-color: #ff305b;
+  border-radius: 5px;
+  border: none;
+}
+.footer {
+  overflow: hidden;
+  background-color: #555555;
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.footer-icon svg {
+  margin: 10px;
+}
+.footer p {
+  color: white;
+}
+.footer span {
+  color: #ff305b;
+}
+button:hover {
+  background-color: #9a505f;
+}
